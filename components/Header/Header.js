@@ -59,10 +59,10 @@ export default function Header(props) {
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
-    [classes.fixed]: fixed
+    [classes.fixed]: fixed,
   });
   const brandComponent = (
-    <Link href="/components" as="/components">
+    <Link href="/components" as={components}>
       <Button className={classes.title}>{brand}</Button>
     </Link>
   );
